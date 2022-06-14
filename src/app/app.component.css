@@ -1,0 +1,290 @@
+.header {
+  position: fixed;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 25px 0;
+  width: 100%;
+  top: 0;
+  background: white;
+  z-index: 5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container_row {
+  display: flex;
+  align-items: center;
+}
+
+.logo__image {
+  vertical-align: bottom;
+}
+
+.menu {
+  margin-left: 244px;
+}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+}
+
+.menu__item {
+  margin-right: 115px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.link {
+  font-size: 15px;
+  text-decoration: none;
+  color: #030305;
+}
+
+.link:hover {
+  border-bottom: 1px solid black;
+}
+
+main {
+  margin-top: 90px;
+}
+/* Блок инфо */
+
+.info {
+  background: url('../assets/img/background.png') center;
+  background-size: cover;
+  padding: 104px 0 154px;
+}
+
+.info__title {
+  width: 855px;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 110%;
+  margin-bottom: 40px;
+}
+
+.info__description {
+  max-width: 502px;
+  font-size: 16px;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.link-btn {
+  box-sizing: border-box;
+  border: 0;
+  text-align: center;
+  padding: 20px;
+  width: 334px;
+  height: 64px;
+  background: #030305;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.link-btn:hover:not(:disabled) {
+  background: #575757;
+}
+
+.link-btn:disabled{
+  cursor: not-allowed;
+  color: gray;
+  background-color: #343434;
+}
+
+/* CARS */
+
+.garage {
+  margin: 100px 0;
+}
+
+.sub__title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.cars__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.car {
+  max-width: 384px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.car__image {
+  vertical-align: bottom;
+  transition: all .3s;
+}
+
+.car__image:hover {
+  transform: scale(1.1);
+}
+
+.car__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  padding: 15px 0 17px;
+}
+
+.car__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.car__info__detail {
+  width: 110px;
+  height: 92px;
+  margin: 0 8px;
+}
+
+.detail__image {
+  margin-bottom: 11px;
+}
+
+.link-btn_full {
+  padding: 15px 122px;
+  width: 100%;
+}
+
+.detail__title {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.detail__property {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+/* PRICE */
+
+.price {
+  overflow: hidden;
+}
+
+.price .container {
+  position: relative;
+  padding-bottom: 121px;
+}
+
+.price .sub__title {
+  margin-bottom: 20px;
+}
+
+.price__text {
+  font-size: 16px;
+  line-height: 130%;
+  color: #5d5d5f;
+  margin-bottom: 60px;
+}
+
+.price__form {
+  max-width: 344px;
+}
+
+.price__form__input {
+  padding: 22px 18px;
+  width: 344px;
+  height: 65px;
+  background: white;
+  border: 1px solid #5d5d5f;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: 0;
+  margin-bottom: 15px;
+}
+
+.price__form__input::placeholder {
+  color: #5d5d5f;
+}
+
+.link-btn_full_row {
+  padding: 15px 0;
+}
+
+.price__image {
+  position: absolute;
+  bottom: 0;
+  left: 401px;
+}
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 25px 0;
+}
+
+.footer .container_row {
+  justify-content: space-between;
+}
+
+.rights {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+
+.price__form__input.ng-touched.ng-valid {
+  border: 1px solid #5d5d5f;
+}
+
+.price__form__input.ng-touched.ng-invalid {
+  border: 1px solid red;
+}
+
+.title__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.car-toggle {
+  display: flex;
+  width: 194px;
+  border: 1px solid gray;
+}
+
+.car-toggle div {
+  padding: 20px;
+  background: white;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: black;
+  transition: background-color .5s;
+  cursor: pointer;
+}
+
+.car-toggle div.active {
+  background: #030305;
+  color: #FFFFFF;
+}
+
+.car .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
